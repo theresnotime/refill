@@ -1,6 +1,4 @@
-import re
 from concurrent.futures import as_completed
-from urllib.parse import urlparse
 
 from ..dataparsers import DefaultChain
 from ..models import Citation

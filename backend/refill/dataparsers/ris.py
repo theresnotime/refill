@@ -26,13 +26,13 @@ class RIS:
         if "ris" not in citation.raw:
             return citation
 
-        for l in citation.raw["ris"].split("\n"):
-            l = l.strip().split("-", 1)
-            if len(l) < 2:
+        for line in citation.raw["ris"].split("\n"):
+            line = line.strip().split("-", 1)
+            if len(line) < 2:
                 continue
 
-            tag = l[0].strip()
-            value = l[1].strip()
+            tag = line[0].strip()
+            value = line[1].strip()
             if tag == "ER":
                 break
 

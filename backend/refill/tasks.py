@@ -1,5 +1,6 @@
 import os
 
+import pywikibot
 from celery import Celery, states
 from celery.exceptions import Ignore
 from celery.utils.log import get_task_logger
@@ -9,9 +10,6 @@ from .transforms import FillExternal, FillRef, MergeRef
 
 os.environ.setdefault("PYWIKIBOT2_NO_USER_CONFIG", "1")
 os.environ.setdefault("CELERY_CONFIG_MODULE", "celeryconfig")
-
-import mwparserfromhell
-import pywikibot
 
 logging = get_task_logger("refill2")
 app = Celery("tasks")

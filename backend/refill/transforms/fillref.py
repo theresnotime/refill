@@ -1,12 +1,8 @@
-import re
-import time
 from concurrent.futures import as_completed
 from datetime import date
-from urllib.parse import urlparse
 
 from ..dataparsers import DefaultChain
 from ..formatters import CiteTemplate
-from ..models import Citation
 from ..utils import NoTitleError, Parser
 from .transform import Transform
 
@@ -108,15 +104,12 @@ class FillRef(Transform):
 
         citation.freezeOriginal()
 
-        starttime = time.time()
         for p in DefaultChain:
             try:
                 p.apply(citation)
             except Exception as e:
                 err = e
                 break
-
-        endtime = time.time()
 
         if err:
             return {

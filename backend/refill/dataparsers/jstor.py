@@ -1,5 +1,3 @@
-from furl import furl
-
 from ..models import Citation
 from ..utils import session
 

@@ -2,7 +2,7 @@ import json
 import time
 from collections import OrderedDict
 
-from flask import Flask, Response, abort, request, url_for
+from flask import Flask, Response, abort, url_for
 from flask_cors import CORS
 from flask_restplus import Api, Resource, fields
 from refill.tasks import TASK_MAPPING, fixWikipage
@@ -144,7 +144,7 @@ fixWikipageModel = api.model(
 def set_defaults(model, payload):
     for field, info in model.items():
         if field not in payload or not payload[field]:
-            if info.default != None:
+            if info.default is not None:
                 payload[field] = info.default
             elif isinstance(info, (fields.Nested,)) and info.model:
                 payload[field] = {}

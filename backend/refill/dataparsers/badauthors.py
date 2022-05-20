@@ -13,8 +13,8 @@ class BadAuthors:
         if self._checkList(citation.editors):
             del citation.editors
 
-    def _checkList(self, l):
-        for name in l:
+    def _checkList(self, list):
+        for name in list:
             if len([c for c in name if c in "|:" + string.digits]):
                 return True
         return False

@@ -1,7 +1,6 @@
 import logging
 import re
 from concurrent.futures import ThreadPoolExecutor
-from importlib import import_module
 from uuid import uuid1
 
 import celery.utils.log

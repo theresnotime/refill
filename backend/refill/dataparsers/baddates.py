@@ -1,4 +1,3 @@
-import string
 from datetime import date, timedelta
 
 from ..models import Citation
