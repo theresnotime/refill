@@ -1,6 +1,8 @@
-from ..models import Citation
 import string
 from datetime import date, timedelta
+
+from ..models import Citation
+
 
 class BadDates:
     def __init__(self):

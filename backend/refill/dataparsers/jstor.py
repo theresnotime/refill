@@ -1,6 +1,8 @@
+from furl import furl
+
 from ..models import Citation
 from ..utils import session
-from furl import furl
+
 
 class JSTOR:
     def __init__(self):

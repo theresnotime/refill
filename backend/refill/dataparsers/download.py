@@ -1,8 +1,10 @@
+from bs4 import BeautifulSoup
+from requests.exceptions import SSLError
+
 from ..models import Citation
 from ..utils import session
 from ..utils.errors import FetchError
-from requests.exceptions import SSLError
-from bs4 import BeautifulSoup
+
 
 class Download:
     def __init__(self):

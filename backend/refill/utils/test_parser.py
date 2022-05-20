@@ -1,7 +1,8 @@
 import unittest
 from datetime import date
-from . import Parser
+
 from ..models import Citation
+from . import Parser
 
 
 class TestParser(unittest.TestCase):

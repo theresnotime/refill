@@ -1,5 +1,7 @@
-from ..models import Citation
 import string
+
+from ..models import Citation
+
 
 class BadAuthors:
     def __init__(self):

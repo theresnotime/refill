@@ -1,15 +1,12 @@
-import time
 import json
-
+import time
 from collections import OrderedDict
 
-from flask import Flask, Response, request, abort, url_for
+from flask import Flask, Response, abort, request, url_for
 from flask_cors import CORS
-from flask_restplus import Resource, Api, fields
-from werkzeug.contrib.fixers import ProxyFix
-
+from flask_restplus import Api, Resource, fields
 from refill.tasks import TASK_MAPPING, fixWikipage
-
+from werkzeug.contrib.fixers import ProxyFix
 
 app = Flask(__name__)
 app.config.SWAGGER_UI_DOC_EXPANSION = 'list'

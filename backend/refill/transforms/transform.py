@@ -1,6 +1,8 @@
-from ..models import Context
 from abc import ABCMeta, abstractmethod
+
 from mwparserfromhell.wikicode import Wikicode
+
+from ..models import Context
 
 
 class Transform(metaclass=ABCMeta):

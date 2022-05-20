@@ -1,5 +1,6 @@
 from ..models import Citation
 
+
 class RIS:
     # https://en.wikipedia.org/wiki/RIS_(file_format)
     MAPPING = {

@@ -1,11 +1,10 @@
 import re
-
-from .transform import Transform
-from ..dataparsers import DefaultChain
-from ..models import Citation
-
 from concurrent.futures import as_completed
 from urllib.parse import urlparse
+
+from ..dataparsers import DefaultChain
+from ..models import Citation
+from .transform import Transform
 
 
 class FillExternal(Transform):

@@ -1,6 +1,8 @@
+from furl import furl
+
 from ..models import Citation
 from ..utils import HomepageRedirectError
-from furl import furl
+
 
 class DetectDeadLink:
     def __init__(self):

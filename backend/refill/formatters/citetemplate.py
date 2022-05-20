@@ -1,7 +1,8 @@
 from mwparserfromhell.nodes.template import Template
-from .formatter import Formatter
-from ..models import Context, Citation
+
+from ..models import Citation, Context
 from ..utils import Utils
+from .formatter import Formatter
 
 
 class CiteTemplate(Formatter):

@@ -1,7 +1,9 @@
-from mwparserfromhell.wikicode import Wikicode
-from babel.dates import format_date
-from datetime import date
 import re
+from datetime import date
+
+from babel.dates import format_date
+from mwparserfromhell.wikicode import Wikicode
+
 
 class Utils:
     @staticmethod

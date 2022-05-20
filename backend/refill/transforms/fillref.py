@@ -1,16 +1,15 @@
 import re
-
-from .transform import Transform
-from ..formatters import CiteTemplate
-from ..dataparsers import DefaultChain
-from ..models import Citation
-from ..utils import Parser, NoTitleError
-
-from concurrent.futures import as_completed
-from urllib.parse import urlparse
-from datetime import date
-
 import time
+from concurrent.futures import as_completed
+from datetime import date
+from urllib.parse import urlparse
+
+from ..dataparsers import DefaultChain
+from ..formatters import CiteTemplate
+from ..models import Citation
+from ..utils import NoTitleError, Parser
+from .transform import Transform
+
 
 class FillRef(Transform):
     def __init__(self, ctx=None):

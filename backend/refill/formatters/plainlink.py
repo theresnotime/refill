@@ -1,5 +1,5 @@
+from ..models import Citation, Context
 from .formatter import Formatter
-from ..models import Context, Citation
 
 
 class Plainlink(Formatter):

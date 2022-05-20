@@ -1,11 +1,12 @@
+import os
+
 from celery import Celery, states
-from celery.utils.log import get_task_logger
 from celery.exceptions import Ignore
+from celery.utils.log import get_task_logger
 
 from .models import Context
-from .transforms import MergeRef, FillRef, FillExternal
+from .transforms import FillExternal, FillRef, MergeRef
 
-import os
 os.environ.setdefault('PYWIKIBOT2_NO_USER_CONFIG', '1')
 os.environ.setdefault('CELERY_CONFIG_MODULE', 'celeryconfig')
 

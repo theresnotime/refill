@@ -1,9 +1,17 @@
-from .utils import Utils
-from .parser import Parser
-from .errors import NotFoundError, NoTitleError, ErrorPageError, HomepageRedirectError, UnknownError
+import functools
 
 import requests as _requests
-import functools
+
+from .errors import (
+    ErrorPageError,
+    HomepageRedirectError,
+    NotFoundError,
+    NoTitleError,
+    UnknownError,
+)
+from .parser import Parser
+from .utils import Utils
+
 session = _requests.Session()
 session.headers['User-Agent'] = 'reFill/2 (https://en.wikipedia.org/wiki/User:Zhaofeng_Li/reFill)'
 

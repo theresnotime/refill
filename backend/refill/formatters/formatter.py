@@ -1,5 +1,6 @@
-from ..models import Citation, Context
 from abc import ABCMeta, abstractmethod
+
+from ..models import Citation, Context
 
 
 class Formatter(metaclass=ABCMeta):

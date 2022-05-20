@@ -1,8 +1,9 @@
 import mwparserfromhell
-from mwparserfromhell.wikicode import Wikicode
 from mwparserfromhell.nodes.external_link import ExternalLink
 from mwparserfromhell.nodes.template import Template
 from mwparserfromhell.nodes.text import Text
+from mwparserfromhell.wikicode import Wikicode
+
 from ..models import Citation
 from . import Utils
 

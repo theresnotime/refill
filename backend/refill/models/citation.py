@@ -1,5 +1,6 @@
-import dateparser
 from datetime import date
+
+import dateparser
 
 
 class Citation:

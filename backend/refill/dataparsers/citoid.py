@@ -1,6 +1,8 @@
-from urllib.parse import unquote, quote_plus
+from urllib.parse import quote_plus, unquote
+
 from ..models import Citation
 from ..utils import session
+
 
 class Citoid:
     ENDPOINT = 'https://en.wikipedia.org/api/rest_v1/data/citation'

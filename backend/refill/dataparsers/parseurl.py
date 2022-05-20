@@ -1,5 +1,7 @@
-from ..models import Citation
 from furl import furl
+
+from ..models import Citation
+
 
 class ParseURL:
     def __init__(self):

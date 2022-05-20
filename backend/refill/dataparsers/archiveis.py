@@ -1,6 +1,9 @@
-from ..models import Citation
-from furl import furl
 import re
+
+from furl import furl
+
+from ..models import Citation
+
 
 class ArchiveIs:
     def __init__(self):

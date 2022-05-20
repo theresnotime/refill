@@ -1,5 +1,6 @@
 from ..models import Citation
 
+
 class ParseSpecial:
     """
         How to write a special rule

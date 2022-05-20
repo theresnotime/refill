@@ -1,5 +1,6 @@
 from ..models import Citation
 
+
 class ArXiv:
     def __init__(self):
         pass

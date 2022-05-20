@@ -1,6 +1,7 @@
 from ..models import Citation
 from ..utils import session
 
+
 class DOI:
     def __init__(self):
         pass

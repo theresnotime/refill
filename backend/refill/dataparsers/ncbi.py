@@ -1,6 +1,7 @@
 from ..models import Citation
 from ..utils import session
 
+
 class NCBI:
     ENDPOINT = 'https://api.ncbi.nlm.nih.gov/lit/ctxp/v1'
     def __init__(self):
