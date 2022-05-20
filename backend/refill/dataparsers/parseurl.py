@@ -8,7 +8,7 @@ class ParseURL:
         pass
 
     def apply(self, citation: Citation) -> Citation:
-        if 'url' in citation:
-            citation.raw['parsedUrl'] = furl(citation.url)
+        if "url" in citation:
+            citation.raw["parsedUrl"] = furl(citation.url)
 
         return citation

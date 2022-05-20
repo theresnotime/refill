@@ -5,7 +5,7 @@ from ..models import Citation, Context
 
 class Formatter(metaclass=ABCMeta):
     @abstractmethod
-    def __init__(self, ctx: Context=None):
+    def __init__(self, ctx: Context = None):
         if ctx is None:
             self._ctx = Context()
         else:

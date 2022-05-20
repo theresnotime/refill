@@ -18,7 +18,7 @@ class FillExternal(Transform):
         completeCount = 0
         errors = []
 
-        self._ctx.reportProgress('SCANNING', 0, {})
+        self._ctx.reportProgress("SCANNING", 0, {})
         for tag in wikicode.ifilter_external_links(recursive=False):
             if tag.title:
                 continue
@@ -37,9 +37,9 @@ class FillExternal(Transform):
             else:
                 completeCount += 1
 
-            self._ctx.reportProgress('FETCHING', completeCount / linkCount, {
-                'errors': errors
-            })
+            self._ctx.reportProgress(
+                "FETCHING", completeCount / linkCount, {"errors": errors}
+            )
 
         return wikicode
 

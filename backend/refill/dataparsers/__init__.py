@@ -17,25 +17,19 @@ DefaultChain = [
     ParseURL(),
     Download(),
     DetectDeadLink(),
-
     Title(),
-
     # Archives
-    ArchiveIs(), # archive.is and friends
-
+    ArchiveIs(),  # archive.is and friends
     # Citoid
     Citoid(),
-
     # Data cleaning
     BadAuthors(),
     BadDates(),
     ParseSpecial(),
-
     # RIS providers
     DOI(),
     NCBI(),
     JSTOR(),
     RIS(),
-
     ArXiv(),
 ]

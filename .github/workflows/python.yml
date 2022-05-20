@@ -30,4 +30,4 @@ jobs:
           pip install -r backend/requirements.txt
       - name: Run tox
         # Skip tox for now!
-        run: tox --notest
+        run: tox -v
