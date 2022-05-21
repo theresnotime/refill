@@ -1,3 +1,4 @@
+/* eslint-disable no-redeclare */
 // <syntaxhighlight lang="JavaScript">
 
 // ==UserScript==
@@ -140,8 +141,6 @@
 
 /** Define global objects. */
 var wikEdDiffConfig;
-var WED;
-
 
 /**
  * wikEd diff main class.
