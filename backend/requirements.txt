@@ -10,5 +10,5 @@ mwparserfromhell==0.6.4
 pywikibot==7.3.0
 requests==2.27.1
 redis==4.3.3
-pymongo==4.1.1
+pymongo==4.3.3
 Werkzeug==2.1.2
